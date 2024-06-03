@@ -7,20 +7,19 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Update
-import com.example.gp_tp.data.entities.Role
-
+import com.example.gp_tp.data.entities.Task
 
 @Dao
-interface RoleDao {
+interface TaskDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun addRole(role: Role)
+    suspend fun addTask(task: Task)
 
     @Update
-    suspend fun updateRole(role: Role)
+    suspend fun updateTask(task: Task)
 
-    @Query("SELECT * FROM Cargo ORDER BY id_cargo DESC")
-    fun readAllRoles() : LiveData<List<Role>>
+    @Query("SELECT * FROM Tarefa ORDER BY id_tarefa DESC")
+    fun readAllTasks() : LiveData<List<Task>>
 
     @Delete
-    suspend fun deleteRole(role: Role)
+    suspend fun deleteTask(task: Task)
 }
