@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">GP_TP</string>
+
+    <string name="intro1">Junte-se á nossa equipa!</string>
+    <string name="intro2">Organize tarefas, acompanhe progressos e alcance objetivos com facilidade.</string>
+    <string name="intro3">Exporte as estatísticas dos seus projetos.</string>
+
+    <string name="proximo">Próximo</string>
+    <string name="anterior">Anterior</string>
+    <string name="concluido">Concluído</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
